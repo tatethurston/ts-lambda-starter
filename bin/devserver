@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+shopt -s nullglob globstar
+
+(
+  cd dist
+  sam local start-api
+)
+

@@ -1,0 +1,33 @@
+{
+  "name": "ts-lambda-starter",
+  "version": "1.0.0",
+  "description": "Typescript AWS Lambda Starter",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.5",
+    "@types/node": "^10.9.4",
+    "prettier": "^1.9.2",
+    "ts-node": "^4.0.2",
+    "tslint": "^5.8.0",
+    "tslint-config-prettier": "^1.6.0",
+    "typescript": "^2.8.3"
+  },
+  "scripts": {
+    "lint": "prettier --write 'src/**/*.ts' && tslint -c tslint.json 'src/**/*.ts' --fix",
+    "test": "mocha -r ts-node/register src/**/*.test.ts",
+    "test:debug": "yarn test --inspect",
+    "watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Tate Thurston <tatethurston@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
